@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37551" started-at="2016-07-19T22:09:03Z" finished-at="2016-07-19T22:09:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37551" started-at="2016-07-19T22:09:03Z" finished-at="2016-07-19T22:09:41Z">
+      <class name="com.test.FlightsPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="setup" is-config="true" duration-ms="23796" started-at="2016-07-19T18:08:39Z" finished-at="2016-07-19T18:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="setUp" is-config="true" duration-ms="295" started-at="2016-07-19T18:09:03Z" finished-at="2016-07-19T18:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataMethod(java.lang.String, java.lang.String, java.util.Date, java.util.Date)[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="dataMethod" duration-ms="34191" started-at="2016-07-19T18:09:06Z" data-provider="data" finished-at="2016-07-19T18:09:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SFO]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thu Oct 20 00:00:00 EDT 2016]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tue Dec 20 00:00:00 EST 2016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataMethod -->
+        <test-method status="FAIL" signature="dataMethod(java.lang.String, java.lang.String, java.util.Date, java.util.Date)[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="dataMethod" duration-ms="216" started-at="2016-07-19T18:09:40Z" data-provider="data" finished-at="2016-07-19T18:09:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SFO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BOS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sat Jul 30 00:00:00 EDT 2016]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Fri Aug 12 00:00:00 EDT 2016]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[Element is not currently visible and so may not be interacted with
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CAV-PC', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 01b2e96d-2bdb-4b5d-8428-1cc457a0debe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CAV-PC', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 01b2e96d-2bdb-4b5d-8428-1cc457a0debe
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at com.page.FlightsPage.flightsPageDriver(FlightsPage.java:32)
+	at com.test.FlightsPageTest.dataMethod(FlightsPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CAV-PC', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/kabi/AppData/Local/Temp/anonymous7643607726036234125webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/kabi/AppData/Local/Temp/anonymous7643607726036234125webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/kabi/AppData/Local/Temp/anonymous7643607726036234125webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/kabi/AppData/Local/Temp/anonymous7643607726036234125webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/kabi/AppData/Local/Temp/anonymous7643607726036234125webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataMethod -->
+        <test-method status="PASS" signature="originTextTest()[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="originTextTest" duration-ms="84" started-at="2016-07-19T18:09:40Z" finished-at="2016-07-19T18:09:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- originTextTest -->
+        <test-method status="PASS" signature="destinationTextTest()[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="destinationTextTest" duration-ms="60" started-at="2016-07-19T18:09:40Z" finished-at="2016-07-19T18:09:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destinationTextTest -->
+        <test-method status="PASS" signature="changeButtonTest()[pri:0, instance:com.test.FlightsPageTest@29ee9faa]" name="changeButtonTest" duration-ms="49" started-at="2016-07-19T18:09:40Z" finished-at="2016-07-19T18:09:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeButtonTest -->
+      </class> <!-- com.test.FlightsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
